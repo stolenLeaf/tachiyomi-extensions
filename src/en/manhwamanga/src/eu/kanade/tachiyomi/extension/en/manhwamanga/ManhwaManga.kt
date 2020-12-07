@@ -100,7 +100,7 @@ class ManhwaManga : ParsedHttpSource() {
             }
         }
     }
-
+//chapter
     override fun chapterListSelector() = "#list-chapter > div.row > div > ul > li:nth-child(n)"
 
     override fun chapterFromElement(element: Element): SChapter {
