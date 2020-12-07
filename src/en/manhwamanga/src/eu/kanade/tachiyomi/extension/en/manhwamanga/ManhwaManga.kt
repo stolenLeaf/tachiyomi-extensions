@@ -85,7 +85,7 @@ class ManhwaManga : ParsedHttpSource() {
     }
 
     override fun searchMangaNextPageSelector(): Nothing? = null
-
+//manga details
     override fun mangaDetailsParse(document: Document) = SManga.create().apply {
         title = document.select("div.col-xs-12.col-sm-8.col-md-8.desc > h3").text()
         description = document.select("div.desc-text > p").text()
